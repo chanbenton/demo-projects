@@ -23,6 +23,7 @@
 						<textarea class="form-control" v-model="note.text"></textarea>
 					</div>
 				</div>
+				<button class="btn btn-primary" @click="addNote">Submit</button>
 			</div>
 		</div>
 		<script>
@@ -31,13 +32,23 @@
 				data: {
 					title: 'Notemaster',
 					note:{
-							title: '',
-							text: ''
+						title: '',
+						text: ''
 					},
-					notes:{
+					notes:[{
 						title:'Visited Hawaii',
 						text:'Would want to try surfing at some point',
 						date: new Date(Date.now()).toLocaleString()
+					}]
+				},
+				methods: {
+					addNote(){
+						let {text, title} = this.note
+						this.notes.push({
+							text,
+							title,
+							date: new Date(Date.now()).toLocaleString()
+						})
 					}
 				}
 			})
