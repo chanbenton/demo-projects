@@ -7,14 +7,15 @@
 <script>
 
 export default{
+	props: ['id'],
 	data(){
 		return{
 			character:{}
 		}
 	},
   	methods: {
-    	fetchCharacter(){
-      		fetch('https://swapi.co/api/people/1', {
+    	fetchCharacter(id){
+      		fetch(`https://swapi.co/api/people/${id}`, {
         	mode: 'cors',
         	method: 'GET'
       	})
@@ -23,7 +24,7 @@ export default{
     }
   },
   created() {
-    this.fetchCharacter()
+    this.fetchCharacter(this.id)
   }
 }
 </script>
