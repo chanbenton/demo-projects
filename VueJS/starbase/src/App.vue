@@ -3,8 +3,9 @@
     <h3>{{title}}</h3>
     <div class="col-md-12">
       <Character
-        v-for="id in initial_ids"
+        v-for="(id,index) in initial_ids"
         :id="id"
+        key="index"
       />
     </div>
   </div>
