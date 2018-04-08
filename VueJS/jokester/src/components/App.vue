@@ -1,11 +1,14 @@
 <template>
 	<div id="app">
+
 		Got jokes?
 		<button class="btn btn-primary" @click="initJokes">
-		Add 10 random jokes</button><br><br>
+		Add 10 random jokes</button>
+		<button class="btn btn-primary" @click="addJoke">
+		Add 1 random joke</button><br><br>
 		
 		<div class="container">
-			<div class="row form-group">
+		 	<div class="row form-group">
 				<Joke 
 					v-for="(joke, index) in $store.state.jokes"
 					:joke="joke"
@@ -22,7 +25,8 @@
 
 	export default{
 		methods: mapActions([
-			'initJokes'
+			'initJokes',
+			'addJoke'
 		]),
 		components:{
 			Joke
