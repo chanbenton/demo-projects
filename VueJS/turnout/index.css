@@ -7,15 +7,20 @@
 	margin-top: 60px;
 }
 
-.signout-btn{
+.signout-btn {
 	position:absolute;
 	text-align: right;
 	top: 60px;
 	right: 40px;
 }
 
-.form{
+.form {
 	padding-left: 30%;
 	padding-right: 30%;
+}
 
+.event-card {
+	border: 2px solid #2C3E50;
+	margin-top: 10px;
+	border-radius: 4px;
 }
