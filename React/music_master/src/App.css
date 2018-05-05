@@ -1,8 +1,14 @@
-.App {
-	text-align:center;
-	padding:5%;
-}
 body {
 	background: #000;
 	color: #fff;
 }
+
+.App {
+	text-align:center;
+	padding:5%;
+}
+
+.artist {
+	font-weight:bold;
+}
+
