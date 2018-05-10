@@ -5,20 +5,39 @@ class Profile extends Component {
 	render() {
 		let artist = {
 			name: '',
-			followers: {total:''}
+			followers: {total:''},
+			images:[{url: ''}],
+			genres:[]
 		}
 
-		if (this.props.artist !== null){
-			artist = this.props.artist
-		} 
+		artist = this.props.artist !== null ? this.props.artist : artist;
 
 		return (
-			<div>
-				<div class="artist">Artist name: {artist.name}</div>
-				<div># of followers: {artist.followers.total}</div>
+			<div className="profile">
+				<img
+					alt="Profile"
+					className="profile-img"
+					src={artist.images[0].url}
+				/> 
+				<div className="profile-info">
+					<div className="profile-name"> {artist.name}</div>
+					<div className="profile-followers">{artist.followers.total} followers</div>
+					
+					{/*Displays every genre, the last genre will add '&'*/}
+					<div className="profile-genres">Genres: {
+						artist.genres.map((genre,k) => {
+							genre = genre !== artist.genres[artist.genres.length-1] 
+								? ` ${genre},` 
+								: ` and ${genre}`;
+							return (<span key={k}>{genre}</span>);
+						})
+					}</div><br/>
+				</div>
 			</div>
 		);
 	}
 }
 
 export default Profile;
+
+
