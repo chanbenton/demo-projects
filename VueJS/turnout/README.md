@@ -17,5 +17,5 @@ npm run build
 
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
-!["Screenshot preview"](Screenshots/screenshot1.png)
+!["Screenshot preview"](https://raw.githubusercontent.com/chanbenton/demo-projects/master/VueJS/turnout/Screenshots/Screenshot1.png)
 
