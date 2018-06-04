@@ -1,6 +1,8 @@
 # turnout
 
-> A Vue.js project
+> A web app made to track the date, location, and host's name of numerous events. 
+
+!["Screenshot preview"](https://raw.githubusercontent.com/chanbenton/demo-projects/master/VueJS/turnout/Screenshots/Screenshot1.png)
 
 ## Build Setup
 
@@ -26,5 +28,4 @@ npm run build
 
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
-!["Screenshot preview"](https://raw.githubusercontent.com/chanbenton/demo-projects/master/VueJS/turnout/Screenshots/Screenshot1.png)
 
