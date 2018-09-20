@@ -1,3 +1,10 @@
+!["Start Screen"](https://raw.githubusercontent.com/chanbenton/demo-projects/master/React/music_master/Screenshots/Screenshot1.png)
+
+!["Artist Loaded"](https://raw.githubusercontent.com/chanbenton/demo-projects/master/React/music_master/Screenshots/Screenshot2.png)
+
+!["Sound Preview Enabled"](https://raw.githubusercontent.com/chanbenton/demo-projects/master/React/music_master/Screenshots/Screenshot3.png)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
