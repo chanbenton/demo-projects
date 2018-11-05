@@ -36,7 +36,7 @@ class SignUp extends Component {
 					/>
 					<input
 						className="form-control"
-						type="text"
+						type="password"
 						placeholder="password"
 						onChange={event => this.setState({password: event.target.value})}
 					/>

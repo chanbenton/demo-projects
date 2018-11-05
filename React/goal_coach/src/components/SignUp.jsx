@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 import { firebaseApp } from '../firebase';
 
 class SignUp extends Component {
-	constructor(props){
+	constructor(props) {
 		super(props);
 		this.state = {
 			email: '',
@@ -36,7 +36,7 @@ class SignUp extends Component {
 					/>
 					<input
 						className="form-control"
-						type="text"
+						type="password"
 						placeholder="password"
 						onChange={event => this.setState({password: event.target.value})}
 					/>
